@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongtinFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin cá nhân"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nhập Họ Tên -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ tên"
+                android:layout_marginTop="16dp"
+                android:inputType="textPersonName" />
+
+            <!-- Nhập Avatar -->
+            <EditText
+                android:id="@+id/etAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="URL Ảnh đại diện"
+                android:layout_marginTop="8dp"
+                android:inputType="textUri" />
+
+            <!-- Nhập Giới thiệu -->
+            <EditText
+                android:id="@+id/etIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Giới thiệu"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nút Thêm -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nút Sửa -->
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:layout_marginTop="8dp" />
+
+            <!-- Nút Xóa -->
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

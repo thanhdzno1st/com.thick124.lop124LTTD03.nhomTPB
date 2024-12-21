@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@drawable/black_rounded_background"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_avartar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:shapeAppearance="@style/circular_2"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/img_avartar"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/tv_tensv"
+                android:text="Tên sinh viên"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_gioithieu"
+                android:layout_below="@+id/tv_tensv"
+                android:text="Gioi thieu"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

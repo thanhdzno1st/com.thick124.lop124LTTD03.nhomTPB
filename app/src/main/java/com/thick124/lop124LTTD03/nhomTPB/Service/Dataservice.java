@@ -17,4 +17,25 @@ import retrofit2.http.Query;
 public interface Dataservice {
     @GET("ShowthongtinPHP.php")
     Call<List<User>> getThongtin();
+
+    @FormUrlEncoded
+    @POST("add_thongtin.php")
+    Call<ResponseBody> Addthongtin(
+            @Field("hoTen") String hoTen,
+            @Field("avatar") String avatar,
+            @Field("gioiThieu") String gioiThieu
+    );
+    @FormUrlEncoded
+    @POST("Sua_thongtin.php")
+    Call<ResponseBody> Suathongtin(
+            @Field("hoTen") String id,
+            @Field("hoTen") String hoTen,
+            @Field("avatar") String avatar,
+            @Field("gioiThieu") String gioiThieu
+    );
+    @FormUrlEncoded
+    @POST("Delete_thongtin.php")
+    Call<ResponseBody> Deletethongtin(
+            @Field("id") String id
+    );
 }
