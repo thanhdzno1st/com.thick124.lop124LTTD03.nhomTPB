@@ -39,23 +39,27 @@
         android:layout_marginLeft="20dp"
         android:textStyle="normal"
         android:text="Lê Đại Thành: 22115053122340 (Nhóm trưởng)" />
+
     <TextView
         android:id="@+id/st_2"
-        android:layout_below="@+id/st_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:layout_below="@+id/st_1"
         android:layout_marginLeft="20dp"
-        android:textStyle="normal"
-        android:text="Nguyễn Viết Lâm Phong: 22115053122329" />
+        android:layout_marginTop="39dp"
+        android:text="Nguyễn Viết Lâm Phong: 22115053122329"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
     <TextView
         android:id="@+id/st_3"
-        android:layout_below="@+id/st_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:layout_below="@+id/st_2"
         android:layout_marginLeft="20dp"
-        android:textStyle="normal"
-        android:text="Nguyễn Văn Bảo: 22115053122303" />
+        android:layout_marginTop="36dp"
+        android:text="Nguyễn Văn Bảo: 22115053122303"
+        android:textSize="16sp"
+        android:textStyle="normal" />
 </RelativeLayout>
 
